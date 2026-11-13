@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprockyland</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: #e6edf3;
+            background:
+                radial-gradient(circle at top, #172554 0, #0d1117 45%),
+                #0d1117;
+        }
+
+        .page {
+            width: min(900px, 92%);
+            margin: auto;
+            padding: 45px 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .avatar {
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: 3px solid #30363d;
+            box-shadow: 0 8px 30px rgba(0,0,0,.35);
+        }
+
+        h1 {
+            margin: 12px 0 4px;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            color: #8b949e;
+            margin: 0;
+        }
+
+        .tiles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .tile {
+            display: block;
+            min-height: 145px;
+            padding: 22px;
+            border: 1px solid #30363d;
+            border-radius: 14px;
+            background: rgba(22, 27, 34, .82);
+            color: inherit;
+            text-decoration: none;
+            transition: .2s ease;
+        }
+
+        .tile:hover {
+            transform: translateY(-4px);
+            border-color: #58a6ff;
+            background: #161b22;
+        }
+
+        .icon {
+            font-size: 1.8rem;
+        }
+
+        .tile h2 {
+            margin: 10px 0 5px;
+            font-size: 1.1rem;
+        }
+
+        .tile p {
+            margin: 0;
+            color: #8b949e;
+            font-size: .9rem;
+        }
+
+        footer {
+            text-align: center;
+            color: #6e7681;
+            margin-top: 30px;
+            font-size: .85rem;
+        }
+
+        @media (max-width: 700px) {
+            .tiles {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .tiles {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <header>
+        <img
+            class="avatar"
+            src="https://avatars.githubusercontent.com/u/121239099?v=4"
+            alt="sprockyland">
+
+        <h1>sprockyland</h1>
+
+        <p class="subtitle">
+            Code · PowerShell · Cache · Smart Home · Technik
+        </p>
+    </header>
+
+
+    <main class="tiles">
+
+        <a class="tile" href="#">
+            <div class="icon">💻</div>
+            <h2>Programmierung</h2>
+            <p>Code · APIs · Web</p>
+        </a>
+
+        <a class="tile" href="#">
+            <div class="icon">⚡</div>
+            <h2>PowerShell</h2>
+            <p>Scripts · Module · Automation</p>
+        </a>
+
+        <a class="tile" href="#">
+            <div class="icon">🗃️</div>
+            <h2>Cache</h2>
+            <p>Daten · Tools · Tests</p>
+        </a>
+
+        <a class="tile" href="#">
+            <div class="icon">🏠</div>
+            <h2>Smart Home</h2>
+            <p>Home Assistant · Geräte · Automation</p>
+        </a>
+
+        <a class="tile" href="#">
+            <div class="icon">🛠️</div>
+            <h2>Tools & Helfer</h2>
+            <p>Utilities · kleine Werkzeuge</p>
+        </a>
+
+        <a class="tile" href="#">
+            <div class="icon">🧪</div>
+            <h2>Spielwiese</h2>
+            <p>Tests · Ideen · Experimente</p>
+        </a>
+
+    </main>
+
+    <footer>
+        🚧 sprockyland wächst noch.
+    </footer>
+
+</div>
+
+</body>
+</html>
